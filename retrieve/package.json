@@ -1,0 +1,15 @@
+{
+  "name": "retrieve",
+  "version": "1.0.0",
+  "description": "this is a simple json app",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server"
+  },
+  "author": "Abril Zaragoza-Palos",
+  "license": "ISC"
+}

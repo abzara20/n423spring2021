@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#content {
+  padding: 40px;
+}
+#content p {
+  margin-bottom: 5px;
+}
+#content div {
+  background-color: rgba(131, 131, 131, 0.5);
+  padding: 10px 10px 5px 10px;
+}
+#content div:nth-child(odd) {
+  background-color: rgba(50, 50, 50, 0.6);
+}
