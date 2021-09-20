@@ -13,7 +13,7 @@ function formSubmit() {
 
 function getData(city, days) {
   $.get(
-    `https://api.weatherapi.com/v1/forecast.json?key=b2401d84f56a456db04203011211309&q=${city}&days=${days}&aqi=yes&alerts=no`,
+    `http://api.weatherapi.com/v1/forecast.json?key=b2401d84f56a456db04203011211309&q=${city}&days=${days}&aqi=yes&alerts=no`,
     function (data) {
       let locationName = data.location.name;
       let region = data.location.region;
