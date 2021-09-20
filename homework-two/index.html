@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>423 Homework 2</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div id="body">
+      <nav>
+        <h1>Weather</h1>
+        <div class="links">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">WEATHER</a>
+          <a href="#">CONTACT</a>
+        </div>
+        <div class="buttons">
+          <button>Login</button>
+          <button>Signup</button>
+        </div>
+      </nav>
+      <div id="content">
+        <form>
+          <input id="city" type="text" placeholder="enter city" />
+          <div>
+            <h4># of Days:</h4>
+            <select name="days" id="daysNum">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+
+          <button id="submit">Get Weather</button>
+        </form>
+
+        <div id="locale"></div>
+
+        <div class="forecast"></div>
+      </div>
+
+      <script src="lib/jquery-3.6.0.min.js"></script>
+      <script src="app/app.js"></script>
+    </div>
+  </body>
+</html>

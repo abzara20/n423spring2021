@@ -1,0 +1,15 @@
+{
+  "name": "homework-two",
+  "version": "1.0.0",
+  "description": "This is a homework assignment to create a weather app using data from an api",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server"
+  },
+  "author": "Abril Zaragoza-Palos",
+  "license": "ISC"
+}
