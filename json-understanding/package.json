@@ -1,0 +1,15 @@
+{
+  "name": "json-understanding",
+  "version": "1.0.0",
+  "description": "This is a review of pulling data from JSON and displaying it on the webpage",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server"
+  },
+  "author": "Abril Zaragoza-Palos",
+  "license": "ISC"
+}
