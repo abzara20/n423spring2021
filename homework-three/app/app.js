@@ -11,10 +11,6 @@ function initSite() {
 
 function initListeners() {
   // function to save data to the local storage
-}
-
-$(document).ready(function () {
-  initSite();
   $("#submit").click(function (e) {
     let fn = $("#fn").val();
     let ln = $("#ln").val();
@@ -71,4 +67,9 @@ $(document).ready(function () {
         `);
     });
   });
+}
+
+$(document).ready(function () {
+  initSite();
+  initListeners();
 });
