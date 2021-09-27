@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW-3 local</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="student-form">
+      <h1>Student information</h1>
+      <input id="fn" type="text" placeholder="First Name" />
+      <input id="ln" type="text" placeholder="Last Name" />
+      <input id="age" type="text" placeholder="Age" />
+      <input id="phone" type="text" placeholder="Phone" />
+      <input id="email" type="text" placeholder="Email" />
+      <textarea
+        name="classes"
+        id="classes"
+        cols="30"
+        rows="10"
+        placeholder="Add classes, seperate by comma"
+      ></textarea>
+      <div class="button-container">
+        <input type="submit" value="Save" id="submit" />
+        <button id="display">Display</button>
+      </div>
+    </div>
+
+    <div class="display-container"></div>
+
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>

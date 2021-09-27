@@ -1,0 +1,15 @@
+{
+  "name": "homework-three",
+  "version": "1.0.0",
+  "description": "HW assignment where we practice adding and displaying information from localstorage",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server"
+  },
+  "author": "Abril Zaragoza-Palos",
+  "license": "ISC"
+}

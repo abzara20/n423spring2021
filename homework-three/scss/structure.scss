@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.student-form {
+  width: 800px;
+  height: 800px;
+  margin: 30px auto;
+  background-color: rgb(108, 224, 186);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  h1 {
+    font-family: sans-serif;
+    text-decoration: underline;
+  }
+  input {
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 50px;
+    width: 400px;
+  }
+  textarea {
+    resize: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 400px;
+  }
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    #submit {
+      padding: 0;
+      width: 100px;
+    }
+    button {
+      border-radius: 10px;
+      width: 100px;
+      height: 50px;
+    }
+  }
+}
+
+.display-container {
+  width: 800px;
+  min-height: 400px;
+  margin: 30px auto;
+
+  &__item {
+    padding: 40px;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgb(202, 202, 200);
+    .schedule {
+      width: 200px;
+    }
+  }
+}
