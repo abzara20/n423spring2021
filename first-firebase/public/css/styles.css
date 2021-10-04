@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.wrapper {
+  padding: 50px;
+}
+
+label,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.submitBtn {
+  width: 200px;
+  padding: 10px 40px;
+  background-color: aqua;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+  /* color: white; */
+}
+
+.getBtn {
+  width: 200px;
+  padding: 10px 40px;
+  background-color: aqua;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  /* color: white; */
+}
