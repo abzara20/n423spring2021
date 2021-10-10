@@ -18,6 +18,20 @@ function initFirebase() {
 }
 
 function initListeners() {
+  $("#qDB").click(function (e) {
+    // we are making a query here for the documents on the database
+    // here the where is important, its what we are searching for
+    _db
+      .collection("Names")
+      .where("fName", ">=", "abby")
+      .get()
+      .then(function (querySnapshot) {
+        querySnapshot.forEach(function (doc) {
+          console.log("name" + doc.data().fName + doc.id);
+        });
+      });
+  });
+
   $(".submitBtn").click(function (e) {
     let fn = $("#fName").val();
     // shove the name into an object
