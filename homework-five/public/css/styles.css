@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.wrapper {
+  font-family: sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 1200px;
+  border: 5px solid #3e92cc;
+  background-color: #ddcad9;
+}
+.wrapper .navigation {
+  width: 80%;
+  height: 60px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #acfcd9;
+  border-radius: 25px;
+}
+.wrapper .navigation h1 {
+  margin-bottom: 0;
+}
+.wrapper .navigation div {
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 5px;
+}
+.wrapper #content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.wrapper #content .album {
+  width: 300px;
+  height: 400px;
+  background-color: #acfcd9;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper #content .album .photo {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
