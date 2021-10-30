@@ -1,0 +1,11 @@
+{
+  "name": "423-midterm",
+  "version": "1.0.0",
+  "description": "Midterm for fa21 n423 class, using firebase to create a simple app",
+  "main": "index.js",
+  "scripts": {
+    "firebase serve": "firebase serve --only hosting"
+  },
+  "author": "Abril Zaragoza-Palos",
+  "license": "ISC"
+}
