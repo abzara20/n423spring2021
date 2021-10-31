@@ -35,8 +35,10 @@
       justify-content: space-evenly;
       flex-direction: column;
       h1 {
-        text-decoration: underline;
         margin-bottom: 30px;
+      }
+      p {
+        margin: 0;
       }
       input {
         width: 250px;
@@ -44,6 +46,15 @@
         border-radius: 5px;
         padding: 0 10px;
         margin-bottom: 15px;
+      }
+      button {
+        margin: 10px 0;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        background-color: #3e92cc;
+        border: 3px solid white;
       }
     }
   }

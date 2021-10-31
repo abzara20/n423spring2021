@@ -7,9 +7,16 @@
   align-items: center;
   justify-content: space-evenly;
 
+  color: #3e92cc;
   background-color: #acfcd9;
   border-radius: 25px;
-  // border-bottom: 5px solid #5f0a87;
+  &--button {
+    border-radius: 5px;
+    padding: 10px;
+    color: #3e92cc;
+    background-color: #acfcd9;
+    border: 3px solid #3e92cc;
+  }
   h1 {
     margin-bottom: 0;
   }

@@ -85,8 +85,16 @@ p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  color: #3e92cc;
   background-color: #acfcd9;
   border-radius: 25px;
+}
+.nav--button {
+  border-radius: 5px;
+  padding: 10px;
+  color: #3e92cc;
+  background-color: #acfcd9;
+  border: 3px solid #3e92cc;
 }
 .nav h1 {
   margin-bottom: 0;
@@ -155,8 +163,10 @@ p {
           flex-direction: column;
 }
 .modal__menu .form h1 {
-  text-decoration: underline;
   margin-bottom: 30px;
+}
+.modal__menu .form p {
+  margin: 0;
 }
 .modal__menu .form input {
   width: 250px;
@@ -164,4 +174,13 @@ p {
   border-radius: 5px;
   padding: 0 10px;
   margin-bottom: 15px;
+}
+.modal__menu .form button {
+  margin: 10px 0;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #3e92cc;
+  border: 3px solid white;
 }
