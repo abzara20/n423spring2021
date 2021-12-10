@@ -1,0 +1,68 @@
+.profile {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  input {
+    height: 35px;
+    width: 200px;
+    background-color: $lblue;
+
+    border-radius: 25px;
+    border: none;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    flex-direction: column;
+
+    text-align: center;
+    width: 450px;
+    border-bottom: 3px solid $egg;
+    margin-bottom: 30px;
+    h1 {
+      text-transform: uppercase;
+    }
+    .id {
+      margin: 20px 0;
+      //   background-color: red;
+      width: 400px;
+      text-align: left;
+    }
+  }
+  .userForm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    // justify-content: space-evenly;
+    flex-direction: column;
+    .half {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    .row {
+      width: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      #userEmail {
+        background-color: $navy;
+        color: $lblue;
+      }
+      .full {
+        width: 400px;
+      }
+    }
+  }
+}

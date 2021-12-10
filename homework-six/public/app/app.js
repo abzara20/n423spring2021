@@ -69,7 +69,7 @@ function signup() {
     .auth()
     .createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
-      updateUser(name);
+      // updateUser(name);
 
       $("#fname").val("");
       $("#lname").val("");

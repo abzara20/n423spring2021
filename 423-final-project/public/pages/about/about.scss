@@ -1,0 +1,30 @@
+.about {
+  max-width: 800px;
+  margin-bottom: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-family: Arial, Helvetica, sans-serif;
+  .header {
+    text-align: center;
+    h1 {
+      margin: 0;
+    }
+    p {
+      font-size: 60px;
+      font-weight: 100;
+    }
+  }
+  .logo {
+    height: 180px;
+    width: 80px;
+    margin-bottom: 20px;
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

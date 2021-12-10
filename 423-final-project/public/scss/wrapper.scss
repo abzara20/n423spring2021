@@ -1,0 +1,40 @@
+#wrapper {
+  min-height: 100vh;
+  max-width: 100vw;
+  // background-color: aqua;
+  position: relative;
+
+  .app {
+    min-height: calc(100vh - 140px);
+    // background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.wrapper {
+  &--home {
+    background-color: $navy;
+    color: $egg;
+  }
+  &--profile {
+    background-color: $dblue;
+    color: $egg;
+  }
+  &--about {
+    background-color: $egg;
+  }
+  &--builder {
+    background-color: $lblue;
+  }
+  &--edit {
+    background-color: $lblue;
+  }
+  &--login {
+    background-color: $egg;
+  }
+  &--launch {
+    background-color: $egg;
+  }
+}

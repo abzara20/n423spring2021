@@ -1,0 +1,51 @@
+.split {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 400px;
+  width: 45%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  .form {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    input {
+      background-color: $egg;
+      border: none;
+      border-bottom: 2px solid $navy;
+      width: 296px;
+      margin-bottom: 20px;
+      height: 30px;
+      font-size: 15px;
+    }
+    ::placeholder {
+      font-style: italic;
+      color: $dblue;
+    }
+
+    button {
+      background-color: $lblue;
+      width: 224px;
+      height: 59px;
+      color: $dblue;
+      font-weight: bolder;
+      font-size: 30px;
+      border: none;
+      border-radius: 25px;
+      margin-top: 20px;
+    }
+  }
+  h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+}
+.login {
+  color: $dblue;
+}
+.signup {
+  color: $red;
+}

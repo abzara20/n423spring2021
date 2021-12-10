@@ -1,0 +1,161 @@
+.build {
+  width: 912.5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-direction: column;
+  height: 100%;
+  input {
+    background-color: $egg;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid $dblue;
+    padding-left: 10px;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  .search {
+    text-transform: lowercase;
+  }
+  .heading {
+    min-height: 130px;
+    max-width: 707px;
+    border-bottom: 2px solid $navy;
+    margin-bottom: 25px;
+    h1 {
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: $navy;
+    }
+  }
+  .build-form {
+    .form-section {
+      margin-bottom: 25px;
+      i {
+        font-size: 25px;
+      }
+      select {
+        width: 150px;
+        padding: 0 10px;
+        height: 40px;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+
+        background-color: $egg;
+        border-radius: 20px;
+        border: 1px solid $dblue;
+
+        text-transform: capitalize;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+
+        .stat {
+          height: 70px;
+          width: 70px;
+          border-radius: 70px;
+          background-color: $dblue;
+          color: $egg;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p {
+            margin: 0;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+
+        .label {
+          width: 80px;
+          p {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+          }
+        }
+
+        .bar {
+          width: 367px;
+          padding: 0 5px;
+          display: flex;
+          align-items: center;
+          justify-content: left;
+
+          height: 45px;
+          background-color: $egg;
+          padding-left: 5px;
+          //   so here i took the highest stat possible, a Google search said it was Blissey, hp of 714. divided by two, and added 10 to pad each end 5px for the fill
+
+          .fill {
+            height: 30px;
+            width: 50px;
+            background-color: $red;
+          }
+        }
+
+        .control {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 200px;
+          .ev {
+            width: 75px;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 0;
+          }
+          p {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: $dblue;
+          }
+          button {
+            height: 30px;
+            width: 30px;
+            border: none;
+            background-color: $lblue;
+            font-size: 30px;
+            color: $navy;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .sub {
+            color: $red;
+          }
+        }
+      }
+      .moveContainer {
+        width: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .move {
+          height: 100px;
+          width: 300px;
+          background-color: $dblue;
+          color: $egg;
+          text-align: center;
+          font-size: 25px;
+        }
+      }
+    }
+    .end {
+      margin-bottom: 100px;
+      text-align: center;
+      width: 650px;
+      h4 {
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+}

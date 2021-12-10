@@ -1,0 +1,190 @@
+<div class="build">
+  <div class="heading">
+    <h1>Pokémon Builder -- Edit</h1>
+
+    <input type="text" name="Build" id="bName" placeholder="Build Name" />
+  </div>
+
+  <div class="build-form">
+    <div class="form-section">
+      <div class="search">
+        <input type="text" id="search" placeholder="Search Pokémon" />
+        <i onclick="getData()" class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <input id="type" disabled type="text" placeholder="Pokémon Type" />
+
+      <div class="details">
+        <select name="Ability" id="ability">
+          <option>ability</option>
+        </select>
+        <input id="item" type="text" placeholder="Item" />
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="row">
+        <div id="stat0" class="stat">
+          <p>#</p>
+        </div>
+
+        <div class="label">
+          <p>Hp</p>
+        </div>
+
+        <div class="bar">
+          <div id="fill0" class="fill"></div>
+        </div>
+
+        <div class="control">
+          <p>EVs:</p>
+          <input id="ev0" class="ev" type="text" disabled value="0" />
+
+          <button onclick="addEv(0)">+</button>
+
+          <button class="sub" onclick="subEv(0)">-</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="stat1" class="stat">
+          <p>#</p>
+        </div>
+
+        <div class="label">
+          <p>Atk</p>
+        </div>
+
+        <div class="bar">
+          <div id="fill1" class="fill"></div>
+        </div>
+
+        <div class="control">
+          <p>EVs:</p>
+          <input id="ev1" class="ev" type="text" disabled value="0" />
+          <button onclick="addEv(1)">+</button>
+          <button onclick="subEv(1)" class="sub">-</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="stat2" class="stat">
+          <p>#</p>
+        </div>
+
+        <div class="label">
+          <p>Def</p>
+        </div>
+
+        <div class="bar">
+          <div id="fill2" class="fill"></div>
+        </div>
+
+        <div class="control">
+          <p>EVs:</p>
+          <input id="ev2" class="ev" type="text" disabled value="0" />
+          <button onclick="addEv(2)">+</button>
+          <button class="sub" onclick="subEv(1)">-</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="stat3" class="stat">
+          <p>#</p>
+        </div>
+
+        <div class="label">
+          <p>SpA</p>
+        </div>
+
+        <div class="bar">
+          <div id="fill3" class="fill"></div>
+        </div>
+
+        <div class="control">
+          <p>EVs:</p>
+          <input id="ev3" class="ev" type="text" disabled value="0" />
+          <button onclick="addEv(3)">+</button>
+          <button class="sub" onclick="subEv(3)">-</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="stat4" class="stat">
+          <p>#</p>
+        </div>
+
+        <div class="label">
+          <p>SpD</p>
+        </div>
+
+        <div class="bar">
+          <div id="fill4" class="fill"></div>
+        </div>
+
+        <div class="control">
+          <p>EVs:</p>
+          <input id="ev4" class="ev" type="text" disabled value="0" />
+          <button onclick="addEv(4)">+</button>
+          <button class="sub" onclick="subEv(4)">-</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="stat5" class="stat">
+          <p>#</p>
+        </div>
+
+        <div class="label">
+          <p>Spe</p>
+        </div>
+
+        <div class="bar">
+          <div id="fill5" class="fill"></div>
+        </div>
+
+        <div class="control">
+          <p>EVs:</p>
+          <input id="ev5" class="ev" type="text" disabled value="0" />
+          <button onclick="addEv(5)">+</button>
+          <button class="sub" onclick="subEv(5)">-</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h4>Moves</h4>
+      <div class="moveContainer">
+        <input
+          class="move"
+          id="move1"
+          type="text"
+          placeholder="Type Move Here"
+        />
+        <input
+          class="move"
+          id="move2"
+          type="text"
+          placeholder="Type Move Here"
+        />
+        <input
+          class="move"
+          id="move3"
+          type="text"
+          placeholder="Type Move Here"
+        />
+        <input
+          class="move"
+          id="move4"
+          type="text"
+          placeholder="Type Move Here"
+        />
+      </div>
+    </div>
+
+    <div class="form-section end">
+      <button onclick="edit()">Save Build</button>
+      <button onclick="delBuild()">Delete Build</button>
+    </div>
+  </div>
+</div>

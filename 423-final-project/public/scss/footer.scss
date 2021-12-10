@@ -1,0 +1,36 @@
+footer {
+  width: 100%;
+  background-color: $red;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  position: absolute;
+  bottom: 0;
+  .links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      color: $egg;
+    }
+  }
+  .logo {
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
