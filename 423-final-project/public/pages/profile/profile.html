@@ -1,16 +1,19 @@
 <div class="profile">
   <div class="top">
-    <h1>Profile</h1>
-
+    <div class="title">
+      <h1>Profile</h1>
+    </div>
+  
     <div class="userName">
     <label for=".username">Username: </label>
     <input type="text" class="username"></input>
     </div>
 
-    <div class="id">
+    <!-- i decided this was not safe to display -->
+    <!-- <div class="id">
       <h4>ID no:</h4>
-      <p></p>
-    </div>
+      <div id="idContainer"></div>
+    </div> -->
   </div>
 
   <div class="userForm">
@@ -27,15 +30,15 @@
         </div>
     </div>
     <div class="row">
-        <label for="#userEmail" value="Email">Email:</label>
+        <label for="#userEmail" value="Email">Email (cannot change):</label>
       <input type="text" disabled id="userEmail" class="full"/>
     </div>
     <div class="row">
         <label for="#userEmail">Password:</label>
-        <input type="text" id="userPW" class="full"/>
+        <input type="text" id="userPW" class="full" placeholder="Input New Password"/>
     </div>
     <div class="row">
-        <button onclick="updateUser">Update</button>
+        <button onclick="updateUser()">Update</button>
     </div>    
 
   </div>

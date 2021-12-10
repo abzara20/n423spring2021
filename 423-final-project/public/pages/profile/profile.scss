@@ -14,6 +14,7 @@
 
     border-radius: 25px;
     border: none;
+    padding-left: 20px;
   }
 
   .top {
@@ -27,14 +28,42 @@
     width: 450px;
     border-bottom: 3px solid $egg;
     margin-bottom: 30px;
-    h1 {
-      text-transform: uppercase;
+    .title {
+      height: 200px;
+      width: 200px;
+      border-radius: 300px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      background-color: $red;
+      border: 10px solid $lblue;
+
+      margin-bottom: 30px;
+      h1 {
+        text-transform: uppercase;
+      }
     }
+
     .id {
       margin: 20px 0;
       //   background-color: red;
       width: 400px;
       text-align: left;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      h4 {
+        margin: 0;
+      }
+      #idContainer {
+        color: $lblue;
+      }
+    }
+    .username {
+      margin-bottom: 20px;
     }
   }
   .userForm {
@@ -62,6 +91,16 @@
       }
       .full {
         width: 400px;
+      }
+      button {
+        width: 70px;
+        height: 40px;
+        border: none;
+        background-color: $red;
+        color: $egg;
+        border-radius: 10px;
+        font-weight: bold;
+        box-shadow: 0 5px 5px rgba(61, 60, 60, 0.459);
       }
     }
   }

@@ -21,8 +21,15 @@ function initFirebase() {
       var providerData = user.providerData;
       var phoneNumber = user.phoneNumber;
       var uid = user.uid;
+
+      $("#login").css("display", "none");
+      $("#logout").css("display", "block");
+
+      route();
     } else {
       console.log("user signed out");
+      $("#login").css("display", "block");
+      $("#logout").css("display", "none");
     }
   });
 }
@@ -52,6 +59,7 @@ function login() {
             console.log("Document data:", doc.data());
 
             let userProfile = doc.data();
+            window.location.hash = "#/home";
           } else {
             // doc.data() will be undefined in this case
             console.log("No such document!");
@@ -124,6 +132,8 @@ function route() {
     clear();
   } else if (pgID == "edit") {
     MODEL.pgChange(pgID, loadView);
+  } else if (pgID == "profile") {
+    MODEL.pgChange(pgID, loadUser);
   } else {
     MODEL.pgChange(pgID, chBackground);
     clear();
@@ -329,7 +339,59 @@ function displayBuild(doc) {
   <p>${doc.data().pokemon}</p>
   </div>`);
 }
+// end homepage functions
 
+function loadUser() {
+  chBackground("profile");
+  let user = firebase.auth().currentUser;
+  $(".username").val(`${user.displayName}`);
+  $("#userEmail").val(`${user.email}`);
+  _db
+    .collection("FinalUsers")
+    .doc(user.uid)
+    .get()
+    .then((doc) => {
+      // $("#idContainer").append(doc.id);
+      $("#userFN").val(`${doc.data().firstName}`);
+      $("#userLN").val(`${doc.data().lastName}`);
+      console.log(doc.firstName, doc.lastName);
+    });
+}
+
+function updateUser() {
+  let user = firebase.auth().currentUser;
+
+  if ($(".username").val() != user.displayName) {
+    updateProfile($(".username").val());
+  }
+
+  if ($("#userPW").val() != "") {
+    let newPassword = $("#userPW").val();
+    user
+      .updatePassword(newPassword)
+      .then(() => {
+        console.log("New Password Set.");
+        // Update successful.
+      })
+      .catch((error) => {
+        // An error ocurred
+        console.log(error.Message);
+      });
+  }
+  _db
+    .collection("FinalUsers")
+    .doc(user.uid)
+    .update({
+      firstName: $("#userFN").val(),
+      lastName: $("#userLN").val(),
+      username: $(".username").val(),
+    })
+    .then(() => {
+      window.alert("profile changed");
+    });
+}
+
+// create the function to get the document's id to load the correct information
 function editPg(id) {
   window.location.hash = "#/edit";
   currentBuild = id;
