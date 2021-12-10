@@ -307,6 +307,7 @@ function delBuild() {
     .delete()
     .then(() => {
       console.log("Document successfully deleted!");
+      window.location.hash = "#/home";
     })
     .catch((error) => {
       console.error("Error removing document: ", error);

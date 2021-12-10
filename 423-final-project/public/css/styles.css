@@ -682,6 +682,11 @@ footer .logo {
 .build .build-form .form-section i {
   font-size: 25px;
 }
+.build .build-form .form-section h4 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1d3557;
+}
 .build .build-form .form-section select {
   width: 150px;
   padding: 0 10px;
@@ -692,6 +697,22 @@ footer .logo {
   border-radius: 20px;
   border: 1px solid #457b9d;
   text-transform: capitalize;
+}
+.build .build-form .form-section h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.build .build-form .form-section button {
+  width: 70px;
+  height: 40px;
+  border: none;
+  background-color: #e63946;
+  color: #f1faee;
+  border-radius: 10px;
+  font-weight: bold;
+  -webkit-box-shadow: 0 5px 5px rgba(61, 60, 60, 0.459);
+          box-shadow: 0 5px 5px rgba(61, 60, 60, 0.459);
+  margin: 0 10px;
+  font-size: 12px;
 }
 .build .build-form .form-section .row {
   display: -webkit-box;
@@ -815,11 +836,20 @@ footer .logo {
   font-size: 25px;
 }
 .build .build-form .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 100px;
   text-align: center;
   width: 650px;
+  height: 40px;
 }
-.build .build-form .end h4 {
-  font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+.build .build-form .end .save {
+  width: 150px;
 }
