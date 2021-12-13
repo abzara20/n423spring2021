@@ -56,7 +56,7 @@ function login() {
         .get()
         .then((doc) => {
           if (doc.exists) {
-            console.log("Document data:", doc.data());
+            // console.log("Document data:", doc.data());
 
             let userProfile = doc.data();
             window.location.hash = "#/home";
@@ -139,13 +139,13 @@ function route() {
     clear();
   }
 
-  console.log(currentBuild, evArray, currentAbility, evCount);
+  // console.log(currentBuild, evArray, currentAbility, evCount);
 }
 
 function initListeners() {
   $(window).on("hashchange", route);
   route();
-  console.log("hello");
+  // console.log("hello");
 }
 
 function getData(active) {
@@ -227,7 +227,7 @@ function save() {
     moveset: moveset,
   };
 
-  console.log(buildObj);
+  // console.log(buildObj);
   _db
     .collection("pokemon")
     .add(buildObj)
@@ -295,7 +295,7 @@ function edit() {
     .doc(currentBuild)
     .set(buildObj)
     .then(() => {
-      console.log("document changed");
+      // console.log("document changed");
       window.location.hash = "#/home";
     });
 }
@@ -355,7 +355,7 @@ function loadUser() {
       // $("#idContainer").append(doc.id);
       $("#userFN").val(`${doc.data().firstName}`);
       $("#userLN").val(`${doc.data().lastName}`);
-      console.log(doc.firstName, doc.lastName);
+      // console.log(doc.firstName, doc.lastName);
     });
 }
 
@@ -371,7 +371,7 @@ function updateUser() {
     user
       .updatePassword(newPassword)
       .then(() => {
-        console.log("New Password Set.");
+        // console.log("New Password Set.");
         // Update successful.
       })
       .catch((error) => {
@@ -412,6 +412,6 @@ $(document).ready(function () {
     initListeners();
     initFirebase();
   } catch {
-    console.log("fail on startup");
+    // console.log("fail on startup");
   }
 });
