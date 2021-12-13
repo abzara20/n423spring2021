@@ -34,3 +34,13 @@ footer {
     background-size: cover;
   }
 }
+@media only screen and (max-width: 750px) {
+  footer {
+    .links {
+      width: 70%;
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}

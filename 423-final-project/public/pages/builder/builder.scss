@@ -5,6 +5,9 @@
   align-items: left;
   flex-direction: column;
   height: 100%;
+  p {
+    font-family: sans-serif;
+  }
   input {
     background-color: $egg;
     height: 40px;
@@ -181,6 +184,38 @@
 
       .save {
         width: 150px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 912.5px) {
+  .build {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 775px) {
+  .build {
+    padding: 0 5px;
+    .build-form {
+      select {
+        margin-bottom: 20px;
+      }
+      .form-section {
+        .row {
+          height: 225px;
+          // justify-content: center;
+          flex-direction: column;
+          .label {
+            text-align: center;
+          }
+          border-bottom: 1px solid $navy;
+        }
+        .moveContainer {
+          width: 100%;
+        }
+      }
+      .end {
+        width: 100%;
       }
     }
   }
